@@ -5,20 +5,12 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   return (
     <footer className="bg-[#160724] text-white py-6 mt-0">
-      <div className="container mx-auto flex flex-col items-center space-y-2">
-        {/* Navigation Links */}
-        {/* <nav className="flex space-x-6">
-          <a  className="hover:text-purple-400"> <Link to={'/home'}>Home</Link></a>
-          <a  className="hover:text-purple-400"><Link to={'/'}>About</Link></a>
-          <a className="hover:text-purple-400"> <Link to={'/projects'}>Projects</Link></a>
-          <a className="hover:text-purple-400"><Link to={'/contact'}>Contact</Link></a>
-        </nav>*/}
-
+      <div className="container mx-auto flex flex-col items-center px-4 sm:px-2">
         {/* Social Media Links */}
         <div className="flex space-x-4">
           <a
@@ -45,9 +37,9 @@ const Footer = () => {
         </div>
 
         {/* Address and Email Section */}
-        <div className="flex space-x-6">
+        <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 mt-4">
           {/* Address */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 justify-center sm:justify-start">
             <FaMapMarkerAlt size={18} />
             <p className="text-sm text-gray-400">
               Kabul, Afghanistan
@@ -55,7 +47,7 @@ const Footer = () => {
           </div>
 
           {/* Email */}
-          <div className="flex items-center space-x-1">
+          <div className="flex items-center space-x-1 justify-center sm:justify-start">
             <FaEnvelope size={18} />
             <a
               href="mailto:masooma.atayee222@gmail.com"
@@ -67,7 +59,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <p className="text-sm text-gray-400">
+        <p className="text-sm text-gray-400 mt-3">
           © {new Date().getFullYear()} Masooma Atayee
         </p>
       </div>

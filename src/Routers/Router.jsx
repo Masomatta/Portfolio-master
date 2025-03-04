@@ -14,11 +14,11 @@ const Routers = createBrowserRouter([
     element: <Navbar />,
     children: [
       {
-        path: "/home",
+        path: "/",
         element: <Home />,
       },
       {
-        path: "/",
+        path: "/about",
         element: <About />,
       },
       {

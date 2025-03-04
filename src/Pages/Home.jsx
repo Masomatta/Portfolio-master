@@ -16,7 +16,7 @@ const Home = () => {
         <div className="flex flex-col justify-center lg:ml-12 items-center md:items-start text-center md:text-left md:w-1/2">
           <div className="flex justify-center sm:hidden items-center lg:mt-3 mt-3 md:mt-0 w-full md:w-1/2">
             <img
-              src="src/Pages/images/Photos/Profile.png"
+              src="public/Photos/Profile.png"
               alt="Image"
               className="w-32 sm:w-40 md:w-48 lg:w-56 rounded-full object-cover border-2 border-purple-500 
       shadow-lg shadow-purple-600 transition-all duration-300 
@@ -62,7 +62,7 @@ const Home = () => {
 
           {/* Download CV Button */}
           <div className="flex justify-center md:justify-start mt-6">
-            <button className="border border-purple-700 hover:scale-95 font-semibold hover:shadow-xl mt-3 bg-transparent text-center shadow-lg shadow-purple-900 hover:shadow-purple-700 px-5 py-2 rounded-xl text-[#D1D5DB] flex items-center">
+            <button className="border border-purple-700 hover:scale-95 mb-5 font-semibold hover:shadow-xl mt-3 bg-transparent text-center shadow-lg shadow-purple-900 hover:shadow-purple-700 px-5 py-2 rounded-xl text-[#D1D5DB] flex items-center">
               <DownloadIcon className="mr-2 animate-bounce" /> Download CV
             </button>
           </div>
@@ -71,7 +71,7 @@ const Home = () => {
         {/* Right Section (Image) */}
         <div className=" justify-center md:flex hidden  items-center  mt-0 md:mt-0 w-full md:w-1/2">
           <img
-            src="src/Pages/images/Photos/Profile.png"
+            src="public/Photos/Profile.png"
             alt="Portfolio Image"
             className="w-32 sm:w-40 md:w-48 lg:w-56 rounded-full object-cover border-2 border-purple-500 
       shadow-lg shadow-purple-600 transition-all duration-300 

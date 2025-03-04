@@ -8,42 +8,42 @@ const projects = [
     title: "Stop Watch",
     description:
       "Using HTML, CSS, and JavaScript, creating a simple Stop Watch",
-    image: "src/Pages/images/Projects/Stop Watch.PNG",
+    image: "public/images/Projects/Stop Watch.PNG",
     link: "githublink",
   },
   {
     title: "Calculator",
     description:
       "Using HTML, CSS, and JavaScript, creating a simple Arithmetic Calculator",
-    image: "src/Pages/images/Projects/Calculator.PNG",
+    image: "public/images/Projects/Calculator.PNG",
     link: "githublink",
   },
   {
     title: "To-Do List",
     description:
       "Using HTML, CSS, and JavaScript, creating a list for daily activities",
-    image: "src/Pages/images/Projects/TO Do list.PNG",
+    image: "public/images/Projects/TO Do list.PNG",
     link: "githublink",
   },
   {
     title: "Quiz App",
     description:
       "Using HTML, CSS, and JavaScript, creating an app containing questions",
-    image: "src/Pages/images/Projects/Quiz app.PNG",
+    image: "public/images/Projects/Quiz app.PNG",
     link: "githublink",
   },
   {
     title: "Counter App",
     description:
       "Using TailwindCSS and React.js, creating a simple counter app",
-    image: "src/Pages/images/Projects/Counter App.PNG",
+    image: "public/images/Projects/Counter App.PNG",
     link: "githublink",
   },
   {
     title: "Log In Form",
     description:
       "Using TailwindCSS and React.js, creating a simple login form showcasing data using (useState)",
-    image: "src/Pages/images/Projects/Log in form2.PNG",
+    image: "public/images/Projects/Log in form2.PNG",
     link: "githublink",
   },
 ];

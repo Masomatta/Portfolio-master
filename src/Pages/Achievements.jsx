@@ -5,19 +5,20 @@ import { motion, AnimatePresence } from "framer-motion";
 const Footer = lazy(() => import("../component/Footer"));
 
 const certificates = [
-  { id: 1, image:"src/Pages/images/Certificates/AI Fundemantals.jpg", title: "Online Course Basics of Computer Science" },
-  { id: 2, image:"src/Pages/images/Certificates/html,css,javascript.jpg", title: "Digital Teacher English" },
-  { id: 3, image: "src/Pages/images/Certificates/FemstechWorldwide Certificate.jpg", title: "TOEFL Prepration class" },
-  { id: 4, image: "src/Pages/images/Certificates/learnquest.jpg", title: "TOEFL Prepration class" },
-  { id: 5, image: "src/Pages/images/Certificates/python.png", title: "TOEFL Prepration class" },
+  { id: 1, image:"public/images/Certificates/learnquest.jpg", title: "Online Course Basics of Computer Science" },
+  { id: 2, image:"public/images/Certificates/lynchBurg.jpg", title: "Admission from LynchBurg University" },
+  { id: 3, image: "public/images/Certificates/FemstechWorldwide Certificate.jpg", title: "TOEFL Prepration class" },
+  { id: 4, image: "public/images/Certificates/html,css,javascript.jpg", title: "Coursera Online class, HTML,CSS and JavaScript" },
+  { id: 5, image: "public/images/Certificates/python.png", title: "Python Basics Online Class" },
+  { id: 6, image: "public/images/Certificates/AI Fundemantals.jpg", title: "AI Fundemantals" },
 ]
 
 const activities = [
-  { id: 1, image:'src/Pages/images/Activities/danishmand-e-Jawan.jpg', description: "Holding the second position among all private schools in Kabul" },
-  { id: 2, image: "src/Pages/images/Activities/TOEFL.jpg", description: "Holding the First position among 25 students, being sponsored by FemsTech Worldwide" },
-  { id: 3, image: "src/Pages/images/Activities/motivational speak.jpg", description: "Winning the Speech Contest and motivating students by telling the story of Fredrick Douglass" },
-  { id: 4, image: "src/Pages/images/Activities/class.jpg", description: "Mentoring Afghan Girls, teaching Computer basics" },
-  { id: 5, image: "src/Pages/images/Activities/mentee feadback.jpg", description: "One of my mentee's Feedback" },
+  { id: 1, image:'public/images/Activities/danishmand-e-Jawan.jpg', description: "Holding the second position among all private schools in Kabul" },
+  { id: 2, image: "public/images/Activities/TOEFL.jpg", description: "Holding the First position among 25 students, being sponsored by FemsTech Worldwide" },
+  { id: 3, image: "public/images/Activities/motivational speak.jpg", description: "Winning the Speech Contest and motivating students by telling the story of Fredrick Douglass" },
+  { id: 4, image: "public/images/Activities/class.jpg", description: "Mentoring Afghan Girls, teaching Computer basics" },
+  { id: 5, image: "public/images/Activities/mentee feadback.jpg", description: "One of my mentee's Feedback" },
 ];
 
 const CertificateItem = memo(({ cert }) => (
@@ -39,8 +40,8 @@ const Achievements = () => {
 
   return (
     <>
-      <div className="min-h-screen bg-[#0C0413] text-white py-12 mt-12 px-6">
-        <div className="flex justify-center mb-8 space-x-8">
+      <div className="min-h-screen bg-[#0C0413] text-white py-12 px-6">
+        <div className="flex justify-center mb-8 mt-10 space-x-8">
           {["certificates", "activities"].map((item) => (
             <button
               key={item}
