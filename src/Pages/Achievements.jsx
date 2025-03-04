@@ -18,7 +18,7 @@ const activities = [
   { id: 2, image: "public/images/Activities/TOEFL.jpg", description: "Holding the First position among 25 students, being sponsored by FemsTech Worldwide" },
   { id: 3, image: "public/images/Activities/motivational speak.jpg", description: "Winning the Speech Contest and motivating students by telling the story of Fredrick Douglass" },
   { id: 4, image: "public/images/Activities/class.jpg", description: "Mentoring Afghan Girls, teaching Computer basics" },
-  { id: 5, image: "public/images/Activities/mentee feadback.jpg", description: "One of my mentee's Feedback" },
+  { id: 5, image: "", description: "One of my mentee's Feedback" },
 ];
 
 const CertificateItem = memo(({ cert }) => (

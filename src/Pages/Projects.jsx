@@ -3,12 +3,13 @@ import { motion } from "framer-motion";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Footer from "../component/Footer";
 
+
 const projects = [
   {
     title: "Stop Watch",
     description:
       "Using HTML, CSS, and JavaScript, creating a simple Stop Watch",
-    image: "public/images/Projects/Stop Watch.PNG",
+  
     link: "githublink",
   },
   {

@@ -1,3 +1,4 @@
+
 import React from "react";
 import TypedComponent from "../component/TypedComponent";
 import {
@@ -7,6 +8,7 @@ import {
   LinkedinIcon,
 } from "lucide-react";
 import Footer from "../component/Footer";
+import Profile from "../assets/images/Profile.png";
 
 const Home = () => {
   return (
@@ -16,7 +18,7 @@ const Home = () => {
         <div className="flex flex-col justify-center lg:ml-12 items-center md:items-start text-center md:text-left md:w-1/2">
           <div className="flex justify-center sm:hidden items-center lg:mt-3 mt-3 md:mt-0 w-full md:w-1/2">
             <img
-              src="/images/Photos/Profile.png"
+              src={Profile}
               alt="Image"
               className="w-32 sm:w-40 md:w-48 lg:w-56 rounded-full object-cover border-2 border-purple-500 
       shadow-lg shadow-purple-600 transition-all duration-300 
@@ -71,7 +73,7 @@ const Home = () => {
         {/* Right Section (Image) */}
         <div className=" justify-center md:flex hidden  items-center  mt-0 md:mt-0 w-full md:w-1/2">
           <img
-            src="/images/Photos/Profile.png"
+            src={Profile}
             alt="Portfolio Image"
             className="w-32 sm:w-40 md:w-48 lg:w-56 rounded-full object-cover border-2 border-purple-500 
       shadow-lg shadow-purple-600 transition-all duration-300 

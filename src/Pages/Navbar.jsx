@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import logo from "../assets/images/Masooma Logo.png"
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className=" p-2 rounded-md">
           <img 
-            src="/images/Photos/Masooma Logo.png" 
+            src={logo} 
             alt="Logo"
             className="sm:w-60 w-40 "
           />

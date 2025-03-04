@@ -13,7 +13,8 @@ import {
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { MdSecurity } from "react-icons/md";
 import Footer from "../component/Footer";
-import Chart from "../component/Chart";
+import Chart from "./Chart";
+import Photo from "../assets/images/Photo.jpg"
 
 const About = () => {
   return (
@@ -35,7 +36,7 @@ const About = () => {
             transition={{ duration: 1 }}
           >
             <img
-              src="/images/Photos/Photo.jpg"
+              src={Photo}
               alt="Masooma"
               className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full mx-auto md:mx-0 mb-4 
                          border-2 border-purple-900 object-cover"
