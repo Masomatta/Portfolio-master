@@ -16,7 +16,7 @@ const backgroundIcons = [
   { icon: <FaGraduationCap />, top: "85%", left: "60%" },
 ];
 
-const Timeline = () => {
+const Chart = () => {
   return (
     <div className="relative flex mt-8 flex-col items-center justify-center h-auto bg-[#0C0413] overflow-hidden">
       {/* Background Icons */}
@@ -73,4 +73,4 @@ const Timeline = () => {
   );
 };
 
-export default Timeline;
+export default Chart;

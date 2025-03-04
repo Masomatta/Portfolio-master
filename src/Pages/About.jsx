@@ -13,7 +13,7 @@ import {
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { MdSecurity } from "react-icons/md";
 import Footer from "../component/Footer";
-import Timeline from "../component/timeline";
+import Chart from "./Chart";
 
 const About = () => {
   return (
@@ -113,7 +113,7 @@ const About = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-        <Timeline/>
+        <Chart/>
         </motion.div>
       </div>
       <Footer />
