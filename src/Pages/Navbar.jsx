@@ -20,7 +20,7 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className=" p-2 rounded-md">
           <img 
-            src="public/Photos/Masooma Logo.png" 
+            src="/images/Photos/Masooma Logo.png" 
             alt="Logo"
             className="sm:w-60 w-40 "
           />
