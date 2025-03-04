@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Timeline from "../component/timeline";
+
 import {
   Book,
   Bot,
@@ -13,6 +13,7 @@ import {
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { MdSecurity } from "react-icons/md";
 import Footer from "../component/Footer";
+import Timeline from "../component/timeline";
 
 const About = () => {
   return (
@@ -112,7 +113,7 @@ const About = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          <Timeline />
+        <Timeline/>
         </motion.div>
       </div>
       <Footer />
