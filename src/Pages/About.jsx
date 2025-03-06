@@ -46,11 +46,11 @@ const About = () => {
               I’m Masooma, a passionate tech enthusiast and lifelong learner
               dedicated to education, innovation, and community service. I
               actively contribute as a volunteer member at Generation of
-              Thinkers and a mentor at Bold Her Voice, where I empower students
+              Thinkers and a mentor at Bold Her Voice, where I empower Afghan girls
               through education and mentorship.
               <br />
               Academically, I have successfully passed the TOEFL and am
-              currently preparing for the SAT through online classes at
+              currently preparing for the SAT through online class at
               Afghanistan Development Academy. Alongside my studies, I am
               expanding my digital skills by learning web development, driven by
               my deep passion for technology and innovation.

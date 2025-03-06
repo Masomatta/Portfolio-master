@@ -50,7 +50,7 @@ const Navbar = () => {
         </ul>
 
         {/* Navigation Menu (Mobile) */}
-        <div className="md:hidden cursor-pointer z-50" onClick={toggleMenu}>
+        <div className="md:hidden cursor-pointer m-0.5 z-50" onClick={toggleMenu}>
           <div className={`w-7 h-1 bg-white mb-1 transition-all duration-300 mr-2 ${menuOpen ? "rotate-45 translate-y-2.5" : ""}`}></div>
           <div className={`w-7 h-1 bg-white mb-1 transition-all duration-300 mr-2 ${menuOpen ? "opacity-0" : ""}`}></div>
           <div className={`w-7 h-1 bg-white transition-all duration-300 mr-2 ${menuOpen ? "-rotate-45 -translate-y-2.5" : ""}`}></div>

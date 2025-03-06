@@ -1,4 +1,3 @@
-
 import React from "react";
 import TypedComponent from "../component/TypedComponent";
 import {
@@ -50,7 +49,11 @@ const Home = () => {
             >
               <LinkedinIcon className="w-8 h-8 sm:w-10 sm:h-10 p-1 rounded-lg shadow-lg bg-transparent border border-purple-800 shadow-purple-900 hover:bg-purple-800 hover:scale-110 transition-all duration-200" />
             </a>
-            <a href="https://www.facebook.com/profile.php?id=61566201606615" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.facebook.com/profile.php?id=61566201606615"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FacebookIcon className="w-8 h-8 sm:w-10 sm:h-10 p-1 rounded-full shadow-lg bg-transparent border border-purple-800 shadow-purple-900 hover:bg-purple-800 hover:scale-110 transition-all duration-200" />
             </a>
             <a
@@ -64,9 +67,12 @@ const Home = () => {
 
           {/* Download CV Button */}
           <div className="flex justify-center md:justify-start mt-6">
-            <button className="border border-purple-700 hover:scale-95 mb-5 font-semibold hover:shadow-xl mt-3 bg-transparent text-center shadow-lg shadow-purple-900 hover:shadow-purple-700 px-5 py-2 rounded-xl text-[#D1D5DB] flex items-center">
-              <DownloadIcon className="mr-2 animate-bounce" /> Download CV
-            </button>
+            <a  href="src/assets/CV/CV (2).pdf"
+            download="Masooma_Atayee_CV.pdf">
+              <button className="border border-purple-700 hover:scale-95 mb-5 font-semibold hover:shadow-xl mt-3 bg-transparent text-center shadow-lg shadow-purple-900 hover:shadow-purple-700 px-5 py-2 rounded-xl text-[#D1D5DB] flex items-center">
+                <DownloadIcon className="mr-2" /> Download CV
+              </button>
+            </a>
           </div>
         </div>
 

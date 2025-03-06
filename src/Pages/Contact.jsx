@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaPhoneAlt, FaEnvelope, FaCommentDots } from "react-icons/fa"; // Import icons
+import { FaPhoneAlt, FaEnvelope, FaCommentDots } from "react-icons/fa"; 
 import emailjs from "emailjs-com";
 import Footer from "../component/Footer";
 
@@ -13,8 +13,8 @@ const Contact = () => {
     message: "",
   });
 
-  const [loading, setLoading] = useState(false); // Loading state
-  const [statusMessage, setStatusMessage] = useState(""); // For status messages
+  const [loading, setLoading] = useState(false); 
+  const [statusMessage, setStatusMessage] = useState(""); 
 
   // Handle form field changes
   const handleChange = (e) => {

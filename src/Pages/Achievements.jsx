@@ -1,24 +1,35 @@
 import { useState, lazy, Suspense, memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Class from "../assets/images/class.jpg"
+import speak from "../assets/images/motivational speak.jpg"
+import mentee from "../assets/images/mentee feadback.jpg"
+import toefl from "../assets/images/TOEFL.jpg"
+import danishmand from "../assets/images/danishmand-e-Jawan.jpg"
+import certi1 from "../assets/images/learnquest.jpg"
+import certi2 from "../assets/images/html,css,javascript.jpg"
+import certi3 from "../assets/images/FemsTech.jpg"
+import certi5 from "../assets/images/python.png"
+import certi6 from "../assets/images/AI Fundemantals.jpg"
+
+
 
 // Lazy Loading for Footer
 const Footer = lazy(() => import("../component/Footer"));
 
 const certificates = [
-  { id: 1, image:"public/images/Certificates/learnquest.jpg", title: "Online Course Basics of Computer Science" },
-  { id: 2, image:"public/images/Certificates/lynchBurg.jpg", title: "Admission from LynchBurg University" },
-  { id: 3, image: "public/images/Certificates/FemstechWorldwide Certificate.jpg", title: "TOEFL Prepration class" },
-  { id: 4, image: "public/images/Certificates/html,css,javascript.jpg", title: "Coursera Online class, HTML,CSS and JavaScript" },
-  { id: 5, image: "public/images/Certificates/python.png", title: "Python Basics Online Class" },
-  { id: 6, image: "public/images/Certificates/AI Fundemantals.jpg", title: "AI Fundemantals" },
+  { id: 1, image: certi1, title: "Online Course Basics of Computer Science" },
+  { id: 2, image: certi2, title: "Coursera Online class, HTML,CSS and JavaScript" },
+  { id: 3, image: certi3, title: "TOEFL Prepration class" },
+  { id: 4, image: certi5, title: "Python Basics Online Class" },
+  { id: 5, image: certi6, title: "AI Fundemantals" },
 ]
 
 const activities = [
-  { id: 1, image:'public/images/Activities/danishmand-e-Jawan.jpg', description: "Holding the second position among all private schools in Kabul" },
-  { id: 2, image: "public/images/Activities/TOEFL.jpg", description: "Holding the First position among 25 students, being sponsored by FemsTech Worldwide" },
-  { id: 3, image: "public/images/Activities/motivational speak.jpg", description: "Winning the Speech Contest and motivating students by telling the story of Fredrick Douglass" },
-  { id: 4, image: "public/images/Activities/class.jpg", description: "Mentoring Afghan Girls, teaching Computer basics" },
-  { id: 5, image: "", description: "One of my mentee's Feedback" },
+  { id: 1, image: danishmand, description: "Holding the second position among all private schools in Kabul" },
+  { id: 2, image: toefl, description: "Holding the First position among 25 students, being sponsored by FemsTech Worldwide" },
+  { id: 3, image: speak, description: "Winning the Speech Contest and motivating students by telling the story of Fredrick Douglass" },
+  { id: 4, image: Class, description: "Mentoring Afghan Girls, teaching Computer basics" },
+  { id: 5, image: mentee, description: "One of my mentee's Feedback" },
 ];
 
 const CertificateItem = memo(({ cert }) => (

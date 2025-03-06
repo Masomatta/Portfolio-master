@@ -32,8 +32,9 @@ function Skills() {
     <>
       <div className="p-8 min-h-screen  bg-[#0C0413] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 sm:gap-8">
         {/* Digital Skills Progress Bar */}
-        <div className=" backdrop-blur-3xl bg-[#190729] mt-20 m-20 sm:ml-30 ml-0 sm:-mr-20 -mr-0 sm:mt-14  shadow-lg grid grid-cols-1 p-6 rounded-xl">
-          <h3 className="font-semibold text-white"> Digital Skills</h3>
+        <div className=" font-poppins backdrop-blur-3xl bg-[#190729] mt-20 m-20 sm:ml-30 ml-0 sm:-mr-20 flex -mr-0 h-125 sm:mt-14 shadow-lg flex-col
+         grid-cols-1 p-6 rounded-xl">
+          <h3 className=" text-white"> Digital Skills</h3>
           <div className="text-white">
             <div className="flex flex-col">
               <span className=" text-white">HTML</span>
@@ -44,27 +45,27 @@ function Skills() {
               <ProgressBar percentage={85} />
             </div>
             <div className="flex flex-col">
-              <span className="font-semibold text-white">JavaScript</span>
+              <span className=" text-white">JavaScript</span>
               <ProgressBar percentage={75} />
             </div>
             <div className="flex flex-col">
-              <span className="font-semibold text-white">React</span>
+              <span className=" text-white">React</span>
               <ProgressBar percentage={70} />
             </div>
             <div className="flex flex-col">
-              <span className="font-semibold text-white">TailwindCSS</span>
+              <span className=" text-white">TailwindCSS</span>
               <ProgressBar percentage={90} />
             </div>
             <div className="flex flex-col">
-              <span className="font-semibold text-white">Python</span>
-              <ProgressBar percentage={30} />
+              <span className=" text-white">Python</span>
+              <ProgressBar percentage={20} />
             </div>
             <div className="flex flex-col">
-              <span className="font-semibold text-white">Photoshop</span>
+              <span className=" text-white">Photoshop</span>
               <ProgressBar percentage={90} />
             </div>
             <div className="flex flex-col">
-              <span className="font-semibold text-white">illustrator</span>
+              <span className=" text-white">illustrator</span>
               <ProgressBar percentage={80} />
             </div>
           </div>
@@ -72,40 +73,40 @@ function Skills() {
 
         {/* Combined Language and Personal Skills */}
         <div
-          className="bg-[#190729]  
-       mt-0 sm:m-18 m-0 sm:ml-70 ml-0 sm:-mr-70 -mr-0 sm:mt-14 shadow-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1
+          className="bg-[#190729] font-poppins  
+       mt-0 sm:m-18 m-0 sm:ml-70 ml-0 sm:-mr-70 -mr-0 sm:mt-14 h-125 shadow-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1
        p-6 rounded-xl"
         >
           <div className=" text-white">
             {/* Language Skills */}
             <h3 className="font-semibold text-white"> Language Skills</h3>
             <ul>
-              <li className="font-semibold">
+              <li className="">
                 Persian
-                <ProgressBar percentage={90} />
+                <ProgressBar percentage={100} />
               </li>
-              <li className="font-semibold">
+              <li className="">
                 English
                 <ProgressBar percentage={90} />
               </li>
-              <li className="font-semibold">
+              <li className="">
                 Turkish
-                <ProgressBar percentage={40} />
+                <ProgressBar percentage={25} />
               </li>
             </ul>
 
             {/* Personal Skills */}
             <h4 className="mt-6 font-semibold text-white"> Personal Skills</h4>
             <ul>
-              <li className="font-semibold">
+              <li className="">
                 Management
                 <ProgressBar percentage={90} />
               </li>
-              <li className="font-semibold">
+              <li className="">
                 Leadership
                 <ProgressBar percentage={89} />
               </li>
-              <li className="font-semibold">
+              <li className=" mb-0">
                 Teamwork
                 <ProgressBar percentage={70} />
               </li>

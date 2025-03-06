@@ -2,50 +2,54 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Footer from "../component/Footer";
-
-
+import stopwatch from "../assets/images/Stop Watch.png"
+import calculator from "../assets/images/Calculator.png"
+import list from "../assets/images/To Do list.png"
+import quiz from "../assets/images/Quiz app.png"
+import counter from "../assets/images/Counter App.png"
+import form from "../assets/images/Log in form2.png"
 const projects = [
   {
     title: "Stop Watch",
     description:
       "Using HTML, CSS, and JavaScript, creating a simple Stop Watch",
-  
-    link: "githublink",
+    image: stopwatch,
+    link: "https://github.com/masooma690/Stop-Watch.git",
   },
   {
     title: "Calculator",
     description:
       "Using HTML, CSS, and JavaScript, creating a simple Arithmetic Calculator",
-    image: "public/images/Projects/Calculator.PNG",
-    link: "githublink",
+    image: calculator,
+    link: "https://github.com/masooma690/Artithmatic-calculator.git",
   },
   {
     title: "To-Do List",
     description:
       "Using HTML, CSS, and JavaScript, creating a list for daily activities",
-    image: "public/images/Projects/TO Do list.PNG",
-    link: "githublink",
+    image: list,
+    link: "https://github.com/masooma690/Simple-To-Do-list.git",
   },
   {
     title: "Quiz App",
     description:
       "Using HTML, CSS, and JavaScript, creating an app containing questions",
-    image: "public/images/Projects/Quiz app.PNG",
-    link: "githublink",
+    image: quiz,
+    link: "https://github.com/masooma690/App-quiz-simple.git",
   },
   {
     title: "Counter App",
     description:
       "Using TailwindCSS and React.js, creating a simple counter app",
-    image: "public/images/Projects/Counter App.PNG",
-    link: "githublink",
+    image: counter,
+    link: "https://github.com/masooma690/Counter-app.git",
   },
   {
     title: "Log In Form",
     description:
       "Using TailwindCSS and React.js, creating a simple login form showcasing data using (useState)",
-    image: "public/images/Projects/Log in form2.PNG",
-    link: "githublink",
+    image: form,
+    link: "https://github.com/masooma690/Log-in-form.git",
   },
 ];
 
@@ -81,10 +85,10 @@ const Projects = () => {
                 className="w-full h-50 sm:h-60 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
                 alt={project.title}
               />
-              <h1 className="text-purple-600 font-semibold mt-3 text-lg">
+              <h1 className="text-purple-600 font-semibold font-poppins mt-3 text-lg">
                 {project.title}
               </h1>
-              <p className="text-white text-sm mt-1">{project.description}</p>
+              <p className="text-white text-sm font-poppins mt-1">{project.description}</p>
 
               <a
                 href={project.link}

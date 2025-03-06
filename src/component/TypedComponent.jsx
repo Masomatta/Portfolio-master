@@ -7,13 +7,13 @@ const TypedComponent = () => {
   useEffect(() => {
     const typed = new Typed(typedElement.current, {
       strings: [
-        "A Dedicated Learner!",
-        "Volunteer Mentor ",
-        "Front-end Developer",
-        "Future Leader",
+        "A Dedicated Learner",
+        "A Volunteer Mentor ",
+        "A Front-end Developer",
+        "A Future Leader",
       ],
       typeSpeed: 50,
-      backSpeed: 25,
+      backSpeed: 30,
       loop: true,
     });
 
