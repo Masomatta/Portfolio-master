@@ -4,10 +4,10 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Footer from "../component/Footer";
 import stopwatch from "../assets/images/stop.png"
 import calculator from "../assets/images/cal.png"
-import list from "../assets/images/To Do list.png"
-import quiz from "../assets/images/Quiz app.png"
-import counter from "../assets/images/Counter App.png"
-import form from "../assets/images/Log in form2.png"
+import list from "../assets/images/list.png"
+import quiz from "../assets/images/quiz.png"
+import counter from "../assets/images/counter.png"
+import form from "../assets/images/login.png"
 const projects = [
   {
     title: "Stop Watch",
