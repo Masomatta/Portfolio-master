@@ -58,7 +58,7 @@ const Projects = () => {
     <>
       <div className="min-h-[80vh] sm:min-h-screen flex flex-col bg-[#0C0413] p-6 mt-10">
         <motion.h2
-          className="text-center text-purple-400 text-3xl font-bold mt-10 mb-6"
+          className="text-center text-purple-400 text-xl font-bold mt-10 mb-6"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
