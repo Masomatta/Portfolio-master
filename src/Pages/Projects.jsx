@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Footer from "../component/Footer";
-import stopwatch from "../assets/images/Stop Watch.png"
+import stopwatch from "../assets/images/stop.png"
 import calculator from "../assets/images/Calculator.png"
 import list from "../assets/images/To Do list.png"
 import quiz from "../assets/images/Quiz app.png"
