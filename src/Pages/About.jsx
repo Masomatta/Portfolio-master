@@ -4,14 +4,10 @@ import { motion } from "framer-motion";
 import {
   Book,
   Bot,
-  Brain,
   Code,
   Dumbbell,
-  Languages,
   LanguagesIcon,
 } from "lucide-react";
-import { GiArtificialIntelligence } from "react-icons/gi";
-import { MdSecurity } from "react-icons/md";
 import Footer from "../component/Footer";
 import Chart from "./Chart";
 import Photo from "../assets/images/Photo.jpg"
@@ -29,7 +25,7 @@ const About = () => {
         >
           {/*Introduction Section*/}
           <motion.div
-            className="p-6 md:w-1/2 sm:w-1/2 rounded-lg shadow-lg bg-transparent border border-purple-800 
+            className="p-6 mt-2 md:w-1/2 sm:w-1/2 rounded-lg shadow-lg bg-transparent border border-purple-800 
                        shadow-purple-900 text-center md:text-left"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -38,7 +34,7 @@ const About = () => {
             <img
               src={Photo}
               alt="Masooma"
-              className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full mx-auto md:mx-0 mb-4 
+              className="w-20 h-20 sm:w-20 sm:h-28 md:w-32 md:h-32 rounded-full mx-auto md:mx-0 mb-4 
                          border-2 border-purple-900 object-cover"
             />
 
@@ -50,8 +46,7 @@ const About = () => {
               through education and mentorship.
               <br />
               Academically, I have successfully passed the TOEFL and am
-              currently preparing for the SAT through online class at
-              Afghanistan Development Academy. Alongside my studies, I am
+              currently preparing for the SAT exam. Alongside my studies, I am
               expanding my digital skills by learning web development, driven by
               my deep passion for technology and innovation.
             </p>

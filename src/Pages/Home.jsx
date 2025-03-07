@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import Footer from "../component/Footer";
 import Profile from "../assets/images/Profile.png";
+import CV from "../assets/CV/cv.pdf"
 
 const Home = () => {
   return (
@@ -24,18 +25,17 @@ const Home = () => {
       hover:shadow-xl hover:shadow-purple-700 animate-pulse"
             />
           </div>
-          <h1 className="text-lg sm:text-4xl font-sacramento font-extrabold mt-10 sm:mt-0 md:text-2xl uppercase text-[#F7B6D5]">
+          <h1 className="text-lg sm:text-4xl font-poppins font-bold mt-10 sm:mt-0 md:text-2xl uppercase text-[#F7B6D5]">
             Hello,
           </h1>
-          <h2 className="text-2xl sm:text-3xl md:text-2xl uppercase text-[#C2A 5E4] mt-4 sm:mt-6 md:mt-8">
+          <h2 className="text-xl sm:text-3xl md:text-2xl font-poppins text-[#C2A 5E4] mt-4 sm:mt-6 md:mt-8">
             I am Masooma Atayee
           </h2>
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold font-roboto text-[#C2A5E4] shadow-purple-400 mt-2">
+          <h2 className="text-sm sm:text-2xl md:text-3xl font-bold font-poppins text-[#C2A5E4] shadow-purple-400 mt-2">
             <TypedComponent />
           </h2>
-          <p className="mt-4 sm:mt-6 md:mt-8 text-sm font-poppins sm:text-base md:text-md max-w-md">
-            A passionate learner, equipped with digital skills, who is
-            passionate about learning and experiencing new things. I am
+          <p className="mt-4 sm:mt-6 md:mt-8 font-poppins sm:text-base md:text-md max-w-md">
+            A passionate learner, who is
             committed to creating innovative solutions for a better future.
             Explore my projects and let's connect!
           </p>
@@ -67,12 +67,12 @@ const Home = () => {
 
           {/* Download CV Button */}
           <div className="flex justify-center md:justify-start mt-6">
-            <a  href="src/assets/CV/CV (2).pdf"
-            download="Masooma_Atayee_CV.pdf">
+            
+            
               <button className="border border-purple-700 hover:scale-95 mb-5 font-semibold hover:shadow-xl mt-3 bg-transparent text-center shadow-lg shadow-purple-900 hover:shadow-purple-700 px-5 py-2 rounded-xl text-[#D1D5DB] flex items-center">
-                <DownloadIcon className="mr-2" /> Download CV
+                <DownloadIcon className="mr-2" /> <a  href={CV} download="Masooma_Atayee_CV.pdf"> Download CV </a>
               </button>
-            </a>
+           
           </div>
         </div>
 

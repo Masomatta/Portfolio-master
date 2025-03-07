@@ -1,17 +1,22 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Navbar from "../Pages/Navbar";
 import Achievements from "../Pages/Achievements";
-
 import Skills from "../Pages/Skills";
 import Contact from "../Pages/Contact";
 import Projects from "../Pages/Projects";
+import ScrollToTop from "../component/ScrollToTop";
 
 const Routers = createBrowserRouter([
   {
     path: "/",
-    element: <Navbar />,
+    element: (
+      <>
+        <ScrollToTop /> 
+        <Navbar />
+      </>
+    ),
     children: [
       {
         path: "/",
@@ -40,4 +45,5 @@ const Routers = createBrowserRouter([
     ],
   },
 ]);
+
 export default Routers;

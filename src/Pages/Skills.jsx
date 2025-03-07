@@ -71,7 +71,7 @@ function Skills() {
           </div>
         </div>
 
-        {/* Combined Language and Personal Skills */}
+        {/* Language and Personal Skills */}
         <div
           className="bg-[#190729] font-poppins  
        mt-0 sm:m-18 m-0 sm:ml-70 ml-0 sm:-mr-70 -mr-0 sm:mt-14 h-125 shadow-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1

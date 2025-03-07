@@ -1,48 +1,56 @@
-import { useState, lazy, Suspense, memo } from "react";
+import { useState, lazy, Suspense, memo, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Class from "../assets/images/class.jpg"
-import speak from "../assets/images/motivational speak.jpg"
-import mentee from "../assets/images/mentee feadback.jpg"
-import toefl from "../assets/images/TOEFL.jpg"
-import danishmand from "../assets/images/danishmand-e-Jawan.jpg"
-import certi1 from "../assets/images/learnquest.jpg"
-import certi2 from "../assets/images/html,css,javascript.jpg"
-import certi3 from "../assets/images/FemsTech.jpg"
-import certi5 from "../assets/images/python.png"
-import certi6 from "../assets/images/AI Fundemantals.jpg"
-
-
+import Class from "../assets/images/class.jpg";
+import speak from "../assets/images/motivational speak.jpg";
+import mentee from "../assets/images/mentee feadback.jpg";
+import danishmand from "../assets/images/danishmand-e-Jawan.jpg";
+import { Medal } from "lucide-react";
 
 // Lazy Loading for Footer
+
 const Footer = lazy(() => import("../component/Footer"));
 
 const certificates = [
-  { id: 1, image: certi1, title: "Online Course Basics of Computer Science" },
-  { id: 2, image: certi2, title: "Coursera Online class, HTML,CSS and JavaScript" },
-  { id: 3, image: certi3, title: "TOEFL Prepration class" },
-  { id: 4, image: certi5, title: "Python Basics Online Class" },
-  { id: 5, image: certi6, title: "AI Fundemantals" },
-]
-
-const activities = [
-  { id: 1, image: danishmand, description: "Holding the second position among all private schools in Kabul" },
-  { id: 2, image: toefl, description: "Holding the First position among 25 students, being sponsored by FemsTech Worldwide" },
-  { id: 3, image: speak, description: "Winning the Speech Contest and motivating students by telling the story of Fredrick Douglass" },
-  { id: 4, image: Class, description: "Mentoring Afghan Girls, teaching Computer basics" },
-  { id: 5, image: mentee, description: "One of my mentee's Feedback" },
+  { id: 1, title: "Online Learning Certifications", description: "››", link: "" },
+  { id: 2, title: "Online Course,  fundemantals of Computer Science", link: "https://coursera.org/verify/XEYFWQW1RCJP" },
+  { id: 3, title: "Coursera Online class, HTML, CSS and JavaScript", link: "https://coursera.org/verify/3MBBEI6XWVNX" },
+  { id: 4, title: "TOEFL Preparation class, sponsored by Femstech Worldwide", link: "" },
+  { id: 5, title: "Python Basics Online Class", link: "https://coursera.org/verify/RGYCN7Y1PRYS" },
+  { id: 6, title: "AI Fundamentals IBM SkillsBuild", link: "https://www.credly.com/badges/bd819009-8c5d-4b6e-904a-2377a101270f" },
 ];
 
-const CertificateItem = memo(({ cert }) => (
-  <motion.div layout className="bg-purple-950 p-2 rounded-md shadow-lg">
-    <img src={cert.image} alt={cert.title} className="w-full h-60 object-cover rounded-md" loading="lazy" />
-    <h3 className="mt-1 font-semibold text-center">{cert.title}</h3>
+const activities = [
+  { id: 1, image: danishmand, description: "Holding the second position in Danishmand-e-Jawan Competition, among all private schools in Kabul" },
+  { id: 2, image: speak, description: "Winning the Speech Contest and motivating students by telling the story of Fredrick Douglass" },
+  { id: 3, image: Class, description: "Mentoring Afghan Girls, teaching Computer basics" },
+  { id: 4, image: mentee, description: "One of my mentee's Feedback" },
+];
+
+const CertificateItem = memo(({ cert, isFirst }) => (
+  <motion.div
+    layout
+    className={`p-4 rounded-md shadow-lg text-center transition-transform duration-300 ${
+      isFirst
+        ? "bg-gradient-to-r from-[#330f53] to-purple-950 text-white font-semibold transform scale-105"
+        : "bg-[#220938] text-white"
+    }`}
+  >
+    <h3 className={`mt-1 ${isFirst ? "text-md" : "text-sm"} font-semibold`}>{cert.title}</h3>
+    {cert.description && <p className="mt-1 text-fuchsia-600 text-4xl">{cert.description}</p>}
+    {cert.link && (
+      <p className="mt-2">
+        <a href={cert.link} className={`text-fuchsia-700 ${isFirst ? "font-bold underline" : ""}`}>
+          View Certificate
+        </a>
+      </p>
+    )}
   </motion.div>
 ));
 
 const ActivityItem = memo(({ activity }) => (
-  <motion.div layout className="bg-purple-950 p-3 rounded-md shadow-lg text-center">
+  <motion.div layout className="bg-purple-950 p-2 rounded-md shadow-lg text-center">
     <img src={activity.image} className="w-full h-60 object-cover" loading="lazy" />
-    <p className="mt-2 text-gray-300">{activity.description}</p>
+    <p className="mt-3 text-gray-300">{activity.description}</p>
   </motion.div>
 ));
 
@@ -83,8 +91,8 @@ const Achievements = () => {
               transition={{ duration: 0.4 }}
               className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"
             >
-              {certificates.map((cert) => (
-                <CertificateItem key={cert.id} cert={cert} />
+              {certificates.map((cert, index) => (
+                <CertificateItem key={cert.id} cert={cert} isFirst={index === 0} />
               ))}
             </motion.div>
           )}

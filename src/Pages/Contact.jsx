@@ -29,20 +29,20 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Set loading state to true
+   
     setLoading(true);
-    setStatusMessage(""); // Reset status message on submit
+    setStatusMessage(""); 
 
-    // Get the form values
+   
     const { firstName, lastName, email, subject, message } = formData;
 
     // Send the form data using Email.js
     emailjs
       .sendForm(
-        "service_1fkndoy",  // Your EmailJS service ID
-        "template_35396so",  // Your EmailJS template ID
-        e.target,            // The form DOM element (we send the form itself)
-        "hp_7f1LFd1zcrcVt5" // Your EmailJS public key (User ID)
+        "service_1fkndoy",  
+        "template_35396so", 
+        e.target,            
+        "hp_7f1LFd1zcrcVt5" 
       )
       .then(
         (result) => {
@@ -52,7 +52,7 @@ const Contact = () => {
         },
         (error) => {
           console.error("Error sending email:", error.text);
-          setLoading(false); // Stop loading spinner
+          setLoading(false); 
           setStatusMessage("Error sending message. Please try again later.");
         }
       );
@@ -127,11 +127,8 @@ const Contact = () => {
                   onChange={handleChange}
                 ></textarea>
 
-                {/* Icons surrounding the message box */}
-                <div className="absolute top-[-60px] sm:left-[-50px] left-[0px] text-3xl md:text-4xl">
-                  <FaPhoneAlt className="text-purple-950 opacity-15" />
-                </div>
-                <div className="absolute top-[-120px] sm:right-[-100px] right-[0px] text-3xl md:text-4xl">
+                {/* Icons*/}
+                <div className="absolute top-[-120px] sm:right-[-100px] right-[-66px] text-3xl md:text-4xl">
                   <FaCommentDots className="text-purple-950 opacity-30" />
                 </div>
               </div>
@@ -142,7 +139,7 @@ const Contact = () => {
               {/* Send Button */}
               <button
                 type="submit"
-                className="bg-purple-950 text-white items-center rounded-md py-1.5 px-1 hover:bg-purple-800 transition duration-300 w-full sm:w-auto"
+                className="bg-purple-950 text-white items-center text-sm rounded-md py-1.5 px-1 hover:bg-purple-800 transition duration-300 w-full sm:w-auto"
                 disabled={loading} // Disable button while sending
               >
                 {loading ? "Sending..." : "Send Message"}
