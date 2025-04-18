@@ -28,7 +28,7 @@ const Navbar = () => {
         </div>
 
         {/* For large Devices */}
-        <ul className="hidden md:flex space-x-11 font-poppins font-bold text-md text-md p-7">
+        <ul className="hidden md:flex space-x-11 font-poppins font-bold text-md p-7">
           <li className="hover:text-purple-300 transition-all duration-300">
             <Link to={'/'}>Home</Link>
           </li>

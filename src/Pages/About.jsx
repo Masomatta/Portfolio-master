@@ -72,12 +72,10 @@ const About = () => {
                 <Book className="text-fuchsia-500" /> Reading Books
               </p>
               <p className=" text-white flex gap-2">
-                {" "}
                 <LanguagesIcon className="text-fuchsia-500" />
                 Learning New Languages
               </p>
               <p className=" text-white flex gap-2">
-                {" "}
                 <Dumbbell className="text-fuchsia-500" />
                 Martial Arts & Fitness
               </p>
@@ -89,12 +87,10 @@ const About = () => {
                 Interests
               </h3>
               <p className="text-white flex gap-2">
-                {" "}
                 <Bot className="text-fuchsia-500" />
                 AI
               </p>
               <p className="text-white flex gap-2">
-                {" "}
                 <Code className="text-fuchsia-500" />
                 Web Development
               </p>

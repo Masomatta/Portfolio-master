@@ -8,7 +8,8 @@ import {
 
 
 const Footer = () => {
-  return( <footer className="bg-[#160724] text-white py-6 mt-0">
+  return(
+  <footer className="bg-[#160724] text-white py-6 mt-0">
     <div className="container mx-auto flex flex-col items-center px-4 sm:px-2">
       {/* Social Media Links */}
       <div className="flex space-x-4">

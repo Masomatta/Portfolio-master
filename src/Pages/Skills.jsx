@@ -89,10 +89,6 @@ function Skills() {
                 English
                 <ProgressBar percentage={90} />
               </li>
-              <li className="">
-                Turkish
-                <ProgressBar percentage={25} />
-              </li>
             </ul>
 
             {/* Personal Skills */}

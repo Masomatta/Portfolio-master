@@ -77,7 +77,7 @@ const Home = () => {
         </div>
 
         {/* Right Section (Image) */}
-        <div className=" justify-center md:flex hidden  items-center  mt-0 md:mt-0 w-full md:w-1/2">
+        <div className=" justify-center md:flex hidden items-center  mt-0 md:mt-0 w-full md:w-1/2">
           <img
             src={Profile}
             alt="Portfolio Image"

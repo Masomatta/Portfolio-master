@@ -6,8 +6,8 @@ import stopwatch from "../assets/images/stop.png"
 import calculator from "../assets/images/cal.png"
 import list from "../assets/images/list.png"
 import quiz from "../assets/images/quiz.png"
-import counter from "../assets/images/counter.png"
 import form from "../assets/images/login.png"
+import taskManagement from "../assets/images/Screenshot (127).png"
 const projects = [
   {
     title: "Stop Watch",
@@ -36,20 +36,21 @@ const projects = [
       "Using HTML, CSS, and JavaScript, creating an app containing questions",
     image: quiz,
     link: "https://github.com/masooma690/App-quiz-simple.git",
-  },
-  {
-    title: "Counter App",
-    description:
-      "Using TailwindCSS and React.js, creating a simple counter app",
-    image: counter,
-    link: "https://github.com/masooma690/Counter-app.git",
-  },
+  }
+  ,
   {
     title: "Log In Form",
     description:
       "Using TailwindCSS and React.js, creating a simple login form showcasing data using (useState)",
     image: form,
     link: "https://github.com/masooma690/Log-in-form.git",
+  },
+  {
+    title: "Task Management App",
+    description:
+      "Developed using the MERN stack (MongoDB, Express, React, Node.js). Features include user authentication, role-based dashboards, and task tracking with status filters",
+    image: taskManagement,
+    link: "https://github.com/masooma690/Task-management-app.git",
   },
 ];
 
@@ -82,7 +83,7 @@ const Projects = () => {
             >
               <img
                 src={project.image}
-                className="w-full h-50 sm:h-60 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
+                className="w-full h-40 sm:h-60 object-cover  rounded-lg transition-transform duration-300 group-hover:scale-105"
                 alt={project.title}
               />
               <h1 className="text-purple-600 font-semibold font-poppins mt-3 text-lg">

@@ -7,8 +7,6 @@ const App = () => {
   return (
     <>
     <RouterProvider router={Routers}/>
- 
-    
     </>
   );
 };

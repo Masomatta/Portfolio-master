@@ -15,10 +15,12 @@
   
   /* Applying to Tailwind */
   .font-poppins {
-    font-family: 'Poppins', sans-serif;
+   
+   font-family: 'Poppins', sans-serif;
   }
   
-  .font-sacramento {
-    font-family: 'Sacramento', cursive;
+  .font-sacramento { 
+   font-family: 'Sacramento', cursive;
   }
+
   

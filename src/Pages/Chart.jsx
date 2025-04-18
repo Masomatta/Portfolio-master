@@ -41,7 +41,7 @@ const Chart = () => {
       {/* Timeline Container */}
       <div className="relative w-full max-w-xl">
         {/* Vertical Line */}
-        <div className="absolute sm:left-1/2 left-10  transform -translate-x-1/2 w-1 h-full bg-purple-500"></div>
+        <div className="absolute sm:left-1/2 left-10 transform -translate-x-1/2 w-1 h-full bg-purple-500"></div>
 
         {/* Timeline Items */}
         {timelineData.map((item, index) => (
