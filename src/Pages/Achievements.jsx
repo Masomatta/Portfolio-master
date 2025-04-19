@@ -18,9 +18,9 @@ const certificates = [
 
 const activities = [
   { id: 1, image: danishmand, description: "2nd place in Danishmand-e-Jawan Competition" },
-  { id: 2, image: speak, description: "Won Speech Contest - Story of Frederick Douglass" },
-  { id: 3, image: Class, description: "Mentoring Afghan Girls in Computer Basics" },
-  { id: 4, image: mentee, description: "Mentee's Feedback" },
+  { id: 2, image: speak, description: "Won Speech Contest" },
+  { id: 3, image: Class, description: "Mricale wings Program, voluntarily teaching Afghan Girls Computer Basics" },
+  { id: 4, image: mentee, description: "Mentee's Feedback, consulting to pass TOEFL test " },
 ];
 
 const CertificateItem = memo(({ cert, isFirst }) => (
