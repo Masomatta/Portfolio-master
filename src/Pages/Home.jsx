@@ -57,7 +57,7 @@ const Home = () => {
               <FacebookIcon className="w-8 h-8 sm:w-10 sm:h-10 p-1 rounded-full shadow-lg bg-transparent border border-purple-800 shadow-purple-900 hover:bg-purple-800 hover:scale-110 transition-all duration-200" />
             </a>
             <a
-              href="https://github.com/masooma690"
+              href="https://github.com/Masomatta"
               target="_blank"
               rel="noopener noreferrer"
             >
