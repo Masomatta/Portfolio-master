@@ -21,7 +21,7 @@ const Footer = () => {
           <FaLinkedin size={24} className="hover:text-purple-400" />
         </a>
         <a
-          href="https://github.com/masooma690"
+          href="https://github.com/Masomatta"
           target="_blank"
           rel="noopener noreferrer"
         >
